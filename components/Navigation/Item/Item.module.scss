@@ -1,0 +1,21 @@
+.container {
+    margin: 10px;
+    font-size: 16px;
+
+    a {
+        color: white;
+        text-decoration: none;
+        
+    }
+    :hover {
+        font-size: 20px;
+    }
+}
+
+.active{
+    a {
+        color: silver;
+        font-size: 12px;
+        pointer-events: none;
+    }
+}
