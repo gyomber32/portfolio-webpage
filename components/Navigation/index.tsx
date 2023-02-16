@@ -14,17 +14,10 @@ export const Navigation: FunctionComponent<Props> = ({ navItems }) => {
   const path = usePathname();
 
   return (
-    <div className={styles.container}>
+    <nav className={styles.container}>
       {navItems.map(({ href, title }) => (
-        <>
-          <Item
-            key={href}
-            isDisabled={path === href}
-            title={title}
-            href={href}
-          />
-        </>
+        <Item key={href} isDisabled={path === href} title={title} href={href} />
       ))}
-    </div>
+    </nav>
   );
 };
