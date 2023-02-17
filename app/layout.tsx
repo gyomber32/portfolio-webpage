@@ -11,7 +11,7 @@ export default function RootLayout({
       <CustomHead />
       <body>
         <Header />
-        <div>{children}</div>
+        <div style={{ marginTop: "5%" }}>{children}</div>
         <Footer />
       </body>
     </html>

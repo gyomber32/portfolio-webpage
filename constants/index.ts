@@ -1,4 +1,5 @@
-import { technologies } from "./Technologies";
-import { navItems } from "./NavItems";
+import { contacts } from "./contacts";
+import { technologies } from "./technologies";
+import { navItems } from "./navItems";
 
-export { technologies, navItems };
+export { contacts, technologies, navItems };
