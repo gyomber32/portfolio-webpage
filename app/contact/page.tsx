@@ -36,6 +36,7 @@ const ContactPage = (): ReactElement => {
           iconSrc="/email_icon.svg"
         />
       </div>
+      You can download my CV, I'm updating it time to time.
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { CustomHead, Footer, Header } from "@/components";
+import { CustomHead, Footer, Header, QuickReach } from "@/components";
 import "./globals.css";
 
 export default function RootLayout({
@@ -10,8 +10,9 @@ export default function RootLayout({
     <html lang="en">
       <CustomHead />
       <body>
+        <QuickReach />
         <Header />
-        <div style={{ marginTop: "5%" }}>{children}</div>
+        <div className="content">{children}</div>
         <Footer />
       </body>
     </html>

@@ -4,6 +4,15 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding: 5px;
+    div {
+        flex: 1 1 33%; /*grow | shrink | basis */
+    }
+    :nth-child(2) {
+        text-align: center;
+    }
+    :nth-child(3) {
+        text-align: end;
+    }
 }
 
 .image {

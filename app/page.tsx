@@ -1,4 +1,3 @@
-import { PreferredTechnologies } from "@/components";
 import Image from "next/image";
 import styles from "./page.module.scss";
 
@@ -18,7 +17,7 @@ export default function Home() {
                 <Image
                   className={styles.javascript}
                   src="/javascript.svg"
-                  alt="Attila_Gyomber_profile_picture"
+                  alt="JavaScript"
                   width={40}
                   height={40}
                   priority
@@ -26,7 +25,7 @@ export default function Home() {
                 <Image
                   className={styles.typescript}
                   src="/typescript.svg"
-                  alt="Attila_Gyomber_profile_picture"
+                  alt="TypeScript"
                   width={40}
                   height={40}
                   priority
@@ -44,9 +43,6 @@ export default function Home() {
           height={300}
           priority
         />
-      </div>
-      <div className={styles.tech_container}>
-        <PreferredTechnologies />
       </div>
     </main>
   );
