@@ -1,0 +1,94 @@
+[
+    {
+        "name": "University of Szeged - Faculty of Sciences and Informatics",
+        "from": "2017.11.30",
+        "to": "2018.12.30",
+        "location": "Szeged, Hungary",
+        "logo": "",
+        "projects": [
+            {
+                "description": "During my internship at University of Szeged as a frontend developer I gained my first experience as Angular2+ and Ionic developer, where my role was to design and develop innovative solutions for a healthcare application with my fellow teammates.",
+                "role": "Software Developer",
+                "technologies": [
+                    "Angular",
+                    "Ionic",
+                    "JavaScript",
+                    "TypeScript"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "EPAM Systems",
+        "from": "2019.01.01",
+        "to": "2020.06.29",
+        "location": "Szeged, Hungary",
+        "logo": "",
+        "projects": [
+            {
+                "description": "Roadmap and traffic displaying application with Google Maps and WebSocket technologies for real time data visualization.",
+                "role": "Frontend Developer",
+                "technologies": [
+                    "Angular",
+                    "JavaScript",
+                    "TypeScript"
+                ]
+            },
+            {
+                "description": "Frontend developer on a project whose purpose was to offer logistic solutions for warehouses.",
+                "role": "Frontend Developer",
+                "technologies": [
+                    "React",
+                    "NodeJS",
+                    "JavaScript",
+                    "TypeScript",
+                    "PostgreSQL"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "One Beyond",
+        "from": "2020.07.13",
+        "to": "current",
+        "location": "Szeged, Hungary",
+        "logo": "",
+        "projects": [
+            {
+                "description": "Designing and building software for a private aviation company where passengers can choose their plane, search for the right time, book and pay online for the flight. Full web and mobile friendly (PWA) application.",
+                "role": "Software Developer",
+                "technologies": [
+                    "React",
+                    "NextJS",
+                    "NodeJS",
+                    "JavaScript",
+                    "TypeScript",
+                    "MongoDB"
+                ]
+            },
+            {
+                "description": "Fontend developer at UKs favorite award winning caravan holiday provider.",
+                "role": "Frontend Developer",
+                "technologies": [
+                    "React",
+                    "NextJS",
+                    "NodeJS",
+                    "JavaScript",
+                    "TypeScript",
+                    "MongoDB"
+                ]
+            },
+            {
+                "description": "Support ongoing softwares and to rewrite an old project from AngularJS to React and to provide enhancements to the web application and also provide immediate solutions to unexpected problems.",
+                "role": "Frontend Developer",
+                "technologies": [
+                    "React",
+                    "NodeJS",
+                    "JavaScript",
+                    "TypeScript",
+                    "MongoDB"
+                ]
+            }
+        ]
+    }
+]

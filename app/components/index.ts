@@ -6,5 +6,6 @@ import { Navigation } from "./Navigation";
 import { CustomHead } from "./Head";
 import { PreferredTechnologies } from "./PrefTechs";
 import { QuickReach } from "./QuickReach";
+import { Title } from "./Title";
 
-export { Card, ContactItem, CustomHead, Footer, Header, Navigation, PreferredTechnologies, QuickReach }
+export { Card, ContactItem, CustomHead, Footer, Header, Navigation, PreferredTechnologies, QuickReach, Title }

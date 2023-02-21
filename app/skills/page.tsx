@@ -1,7 +1,7 @@
 "use client";
 import React, { ReactElement, useEffect } from "react";
-import { PreferredTechnologies } from "@/components";
-import { useTypewriterEffect } from "../../hooks";
+import { PreferredTechnologies, Title } from "@/app/components";
+import { useTypewriterEffect } from "../hooks";
 import styles from "./Skills.module.scss";
 
 const SkillsPage = (): ReactElement => {
@@ -14,10 +14,12 @@ const SkillsPage = (): ReactElement => {
   }, []);
 
   return (
-    <div className={styles.container}>
-      <p className={styles.title}>Preferred skills</p>
-      <p id="desc" className={styles.description}></p>
-      <PreferredTechnologies />
+    <div>
+      <Title className={styles.pop_outin} title="Preferred skills" />
+      <div className={styles.container}>
+        <p id="desc" className={styles.description}></p>
+        <PreferredTechnologies />
+      </div>
     </div>
   );
 };

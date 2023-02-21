@@ -1,4 +1,4 @@
-import { NavItem } from "@/interfaces";
+import { NavItem } from "@/app/interfaces";
 
 export const navItems: NavItem[] = [
     {
@@ -6,12 +6,16 @@ export const navItems: NavItem[] = [
         href: "/",
     },
     {
+        title: "Work",
+        href: "/work",
+    },
+    {
         title: "Skills",
         href: "/skills",
     },
     {
-        title: "Work/Experience",
-        href: "/work",
+        title: "Experience",
+        href: "/experience",
     },
     {
         title: "Contact",

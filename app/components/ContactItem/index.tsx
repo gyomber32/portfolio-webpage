@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./ContactItem.module.scss";
-import { ContactItem as ContactItemType } from "@/interfaces";
+import { ContactItem as ContactItemType } from "@/app/interfaces";
 
 export const ContactItem: FunctionComponent<ContactItemType> = ({
   name,

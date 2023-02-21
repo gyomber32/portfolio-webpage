@@ -1,6 +1,6 @@
 "use client";
 
-import { NavItem } from "@/interfaces";
+import { NavItem } from "@/app/interfaces";
 import { Item } from "./Item";
 import React, { FunctionComponent } from "react";
 import { usePathname } from "next/navigation";

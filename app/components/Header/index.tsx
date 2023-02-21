@@ -1,6 +1,6 @@
 import React from "react";
-import { Navigation } from "@/components/Navigation";
-import { navItems } from "@/constants";
+import { Navigation } from "@/app/components/Navigation";
+import { navItems } from "@/app/constants";
 
 export const Header = (): JSX.Element => {
   return (

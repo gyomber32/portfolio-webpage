@@ -1,4 +1,4 @@
-import { Technology } from "@/interfaces";
+import { Technology } from "@/app/interfaces";
 
 export const technologies: Technology[] = [
     {

@@ -3,11 +3,10 @@ import React from "react";
 import { usePathname } from "next/navigation";
 import { ContactItem } from "../ContactItem";
 import styles from "./QuickReach.module.scss";
-import { quickReach } from "@/constants";
+import { quickReach } from "@/app/constants";
 
 export const QuickReach = (): JSX.Element | null => {
   const path = usePathname();
-  console.log(path);
   if (path === "/contact") {
     return null;
   }

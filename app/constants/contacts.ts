@@ -1,4 +1,4 @@
-import { ContactItem } from "@/interfaces";
+import { ContactItem } from "@/app/interfaces";
 
 export const contacts: ContactItem[] = [
     {

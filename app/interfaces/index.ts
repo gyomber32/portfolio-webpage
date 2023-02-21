@@ -1,3 +1,5 @@
+import { Workplace } from "./workplace"
+
 type NavItem = {
     title: string,
     href: string
@@ -19,4 +21,4 @@ type ContactItem = {
     rel?: "noopener noreferrer";
 };
 
-export type { ContactItem, NavItem, Technology }
+export type { ContactItem, NavItem, Technology, Workplace }
