@@ -10,6 +10,7 @@ type Workplace = {
     to: string;
     location: string;
     logo?: string;
+    website: string;
     projects: Project[];
 };
 

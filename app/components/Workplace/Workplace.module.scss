@@ -1,0 +1,152 @@
+$width: 40%;
+
+.container {
+    position: relative;
+    width: $width;
+    padding: 0px 20px 20px 20px;
+    margin-top: -2px;
+    &_left {
+        border-left: 2px solid #1f5297;
+        left: calc($width/2);
+    }
+    &_right {
+        border-right: 2px solid #1f5297;
+        right: calc($width/2);
+    }
+}
+
+.container_left::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -11px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+}
+
+.container_right::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    right: -11px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &_left{
+        justify-content: start;
+    }
+    &_right{
+        justify-content: end;
+    }
+    
+    .item {
+        padding: 0px 5px 5px 0px;
+    }
+    
+}
+
+.header {
+    display: flex;
+    
+    &_left {
+        flex-direction: row;
+    }
+    &_right {
+        flex-direction: row-reverse;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+
+        &_left {
+            flex-direction: row;
+        }
+        &_right {
+            flex-direction: row-reverse;
+        }
+
+        .logo {
+            &_left{ 
+                float: right;
+                margin-right: 10px;
+            }
+            &_right{
+                float: left;
+                margin-left: 10px;
+            }
+        }
+        
+        .name {
+            display: flex;
+            flex-direction: row;
+            font-size: 1.5rem;
+            font-weight: bold;
+            
+            &_left{
+                justify-content: start;
+            }
+            &_right{
+                justify-content: end;
+            }
+        }
+    }   
+}
+
+.location {
+    margin: 0px 0px 10px 0px;
+    &_left{
+        text-align: left;
+    }
+    &_right{
+        text-align: end;
+    }
+}
+
+.projects {
+    margin: 10px 5px;
+    
+    .project {
+        &_left {
+            direction: ltr;
+        }
+    
+        &_right {
+            direction: rtl;
+        }
+
+        .description {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .technologies {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+
+            .tech {
+                direction: ltr;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+
+
+

@@ -1,63 +1,44 @@
-"use client";
-import React, { ReactElement } from "react";
-import { Title } from "../components";
-import useSWR from "swr";
+import { Suspense } from "react";
+import { Title, Workplace } from "../components";
+import { Workplace as WorkplaceType } from "../interfaces";
 import styles from "./Work.module.scss";
-import { Workplace } from "../interfaces";
 
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
+const WorkPage = async () => {
+  const data = await getWorkplaces();
 
-const WorkPage = (): ReactElement => {
-  const { data, error, isLoading } = useSWR<Workplace[], any, any>(
-    "/api/work",
-    fetcher
-  );
-
-  if (error) return <div>failed to load</div>;
-  if (isLoading) return <div>loading...</div>;
+  const compare = (a: WorkplaceType, b: WorkplaceType) => {
+    return new Date(b.from).getTime() - new Date(a.from).getTime();
+  };
 
   return (
     <div className={styles.container}>
       <Title title="Work" />
-      <div>
-        {data?.map(({ from, to, name, location, logo, projects }) => (
-          <div>
-            <div>{from}</div>
-            <div>{to}</div>
-            <div>{name}</div>
-            <div>{location}</div>
-            <div>{logo}</div>
-            {projects.map(({ description, role, technologies }) => (
-              <div>
-                <div>{description}</div>
-                <div>{role}</div>
-                <ul>
-                  {technologies.map((tech) => (
-                    <li>{tech}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        ))}
+      <div className={styles.work}>
+        <Suspense fallback={<div>Loading...</div>}>
+          {data.sort(compare).map((workplace, index) => (
+            <Workplace
+              key={`${workplace}${index}`}
+              side={index % 2 === 0 ? "right" : "left"}
+              {...workplace}
+            />
+          ))}
+        </Suspense>
       </div>
     </div>
   );
 };
 
-type Props = {
-  workplace: {
-    name: string;
-    from: string;
-    to: string;
-    location: string;
-    logo?: string;
-    projects: {
-      description: string;
-      role: string;
-      keyTechnologies: string[];
-    }[];
-  }[];
+const getWorkplaces = async (): Promise<WorkplaceType[]> => {
+  const res = await fetch("http://localhost:3000/api/work");
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
+  // Recommendation: handle errors
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
 };
 
 export default WorkPage;
