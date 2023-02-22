@@ -6,10 +6,6 @@ export const navItems: NavItem[] = [
         href: "/",
     },
     {
-        title: "Work",
-        href: "/work",
-    },
-    {
         title: "Skills",
         href: "/skills",
     },

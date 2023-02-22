@@ -28,15 +28,6 @@
         "website": "https://www.epam.com",
         "projects": [
             {
-                "description": "Roadmap and traffic displaying application with Google Maps and WebSocket technologies for real time data visualization.",
-                "role": "Frontend Developer",
-                "technologies": [
-                    "Angular",
-                    "JavaScript",
-                    "TypeScript"
-                ]
-            },
-            {
                 "description": "Project whose purpose was to offer logistic solutions for warehouses.",
                 "role": "Frontend Developer",
                 "technologies": [
@@ -45,6 +36,15 @@
                     "JavaScript",
                     "TypeScript",
                     "PostgreSQL"
+                ]
+            },
+            {
+                "description": "Roadmap and traffic displaying application with Google Maps and WebSocket technologies for real time data visualization.",
+                "role": "Frontend Developer",
+                "technologies": [
+                    "Angular",
+                    "JavaScript",
+                    "TypeScript"
                 ]
             }
         ]
@@ -58,11 +58,10 @@
         "website": "https://www.one-beyond.com",
         "projects": [
             {
-                "description": "Designing and building software for a private aviation company where passengers can choose their plane, search for the right time, book and pay online for the flight. Full web and mobile friendly (PWA) application.",
+                "description": "Support ongoing softwares and to rewrite an old project from AngularJS to React and to provide enhancements to the web application and also provide immediate solutions to unexpected problems.",
                 "role": "Fullstack Developer",
                 "technologies": [
                     "React",
-                    "NextJS",
                     "NodeJS",
                     "JavaScript",
                     "TypeScript",
@@ -82,10 +81,11 @@
                 ]
             },
             {
-                "description": "Support ongoing softwares and to rewrite an old project from AngularJS to React and to provide enhancements to the web application and also provide immediate solutions to unexpected problems.",
+                "description": "Designing and building software for a private aviation company where passengers can choose their plane, search for the right time, book and pay online for the flight. Full web and mobile friendly (PWA) application.",
                 "role": "Fullstack Developer",
                 "technologies": [
                     "React",
+                    "NextJS",
                     "NodeJS",
                     "JavaScript",
                     "TypeScript",

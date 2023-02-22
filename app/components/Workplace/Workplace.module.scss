@@ -119,29 +119,32 @@ $width: 40%;
 
 .projects {
     margin: 10px 5px;
+    border-bottom: 2px solid white;
+    &:last-child {
+        border-bottom: none;
+    }
     
     .project {
-        &_left {
-            direction: ltr;
-        }
-    
-        &_right {
-            direction: rtl;
-        }
 
         .description {
             text-align: justify;
             text-justify: inter-word;
         }
+
+        .role {
+            margin: 10px 0 !important;
+        }
         
         .technologies {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             list-style-type: none;
+            margin: 10px 0;
 
             .tech {
                 direction: ltr;
-                padding: 5px;
+                padding-left: 5px;
             }
         }
     }

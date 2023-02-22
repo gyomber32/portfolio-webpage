@@ -1,3 +1,13 @@
+.container {
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .title {
     animation: fadein 3s;
 }
@@ -10,3 +20,32 @@
         opacity:1;
     }
 }
+
+.workplace {
+    &_left {
+        animation: flyin-left 3s;
+    }
+    &_right {
+        animation: flyin-right 3s;
+    }
+    
+}
+
+@keyframes flyin-left {
+    from {
+        left: -1000px;   
+    }
+    to {
+        margin: auto 0;
+    }
+}
+
+@keyframes flyin-right {
+    from {
+        right: -1000px;   
+    }
+    to {
+        margin: auto 0;
+    }
+}
+
