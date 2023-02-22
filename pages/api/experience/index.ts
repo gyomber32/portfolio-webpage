@@ -6,7 +6,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<string>
 ) {
-  const jsonDirectory = path.join(process.cwd(), 'pages/api');
+  const jsonDirectory = path.join(process.cwd(), 'pages/api/experience');
   const fileContents = await fs.readFile(jsonDirectory + '/data.json', 'utf8');
   res.status(200).json(JSON.parse(fileContents));
 }

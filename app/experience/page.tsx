@@ -34,7 +34,7 @@ const ExperiencePage = async () => {
 };
 
 const getWorkplaces = async (): Promise<WorkplaceType[]> => {
-  const res = await fetch("http://localhost:3000/api/work");
+  const res = await fetch("http://localhost:3000/api/experience");
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
   // Recommendation: handle errors

@@ -1,10 +1,16 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import Image from "next/image";
-import { technologies } from "@/app/constants";
 import styles from "./PrefTechs.module.scss";
 import { Card } from "../Card";
+import { Technology } from "@/app/interfaces";
 
-export const PreferredTechnologies = (): JSX.Element => {
+type Props = {
+  technologies: Technology[];
+};
+
+export const PreferredTechnologies: FunctionComponent<Props> = ({
+  technologies,
+}): JSX.Element => {
   return (
     <div className={styles.tech_container}>
       <div className={styles.technologies}>
