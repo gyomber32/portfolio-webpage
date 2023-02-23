@@ -17,7 +17,12 @@ export const PreferredTechnologies: FunctionComponent<Props> = ({
       <div className={styles.technologies}>
         {technologies.map(({ name, src, alt, href }) => (
           <div key={name} className={styles.grid_item}>
-            <Link className={styles.link} href={href}>
+            <Link
+              className={styles.link}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 className={classNames(
                   (name === "Express" || name === "NextJS") && styles.image

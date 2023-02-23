@@ -14,6 +14,10 @@ export const navItems: NavItem[] = [
         href: "/experience",
     },
     {
+        title: "Education",
+        href: "/education",
+    },
+    {
         title: "Contact",
         href: "/contact",
     },
