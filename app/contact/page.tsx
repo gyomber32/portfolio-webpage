@@ -4,7 +4,6 @@ import { contacts } from "@/app/constants";
 import styles from "./Contact.module.scss";
 import Image from "next/image";
 import classNames from "classnames";
-import Link from "next/link";
 
 const ContactPage = (): ReactElement => {
   return (

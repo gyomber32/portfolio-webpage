@@ -1,3 +1,4 @@
+import { Certificate } from "./Certificate";
 import { ContactItem } from "./ContactItem";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -8,4 +9,4 @@ import { QuickReach } from "./QuickReach";
 import { Title } from "./Title";
 import { Workplace } from "./Workplace";
 
-export { ContactItem, CustomHead, Footer, Header, Navigation, PreferredTechnologies, QuickReach, Title, Workplace }
+export { Certificate, ContactItem, CustomHead, Footer, Header, Navigation, PreferredTechnologies, QuickReach, Title, Workplace }

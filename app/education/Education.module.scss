@@ -1,0 +1,40 @@
+.container {
+
+    .title {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: leRotateXZoomIn;
+    }
+
+    .content {
+        margin: 30px;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        animation-name: leRotateYZoomIn;
+        
+        .text {
+            margin-top: 30px;
+            width: 70%;
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+        
+    }
+}
+
+@keyframes leRotateXZoomIn {
+    from {
+        transform: perspective(600px) translate3d(0, -60px, 2000px) rotateX(75deg);
+        opacity: 0
+    }
+    5% { transform: perspective(600px) translate3d(0, -60px, 1500px) rotateX(75deg) }
+}
+
+
+@keyframes leRotateYZoomIn {
+    from {
+        transform: perspective(600px) translate3d(0, -60px, -2000px) rotateY(75deg);
+        opacity: 0
+    }
+    5% { transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg) }
+}
