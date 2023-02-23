@@ -4,7 +4,11 @@
         "from": "2017.11.30",
         "to": "2018.12.30",
         "location": "Szeged, Hungary",
-        "logo": "/university_of_szeged_logo.png",
+        "logo": {
+            "url": "/university_of_szeged_logo.png",
+            "width": 60,
+            "height": 40
+        },
         "website": "https://u-szeged.hu/english",
         "projects": [
             {
@@ -24,7 +28,11 @@
         "from": "2019.01.01",
         "to": "2020.06.29",
         "location": "Szeged, Hungary",
-        "logo": "/epam_systems_logo.svg",
+        "logo": {
+            "url": "/epam_systems_logo.svg",
+            "width": 60,
+            "height": 40
+        },
         "website": "https://www.epam.com",
         "projects": [
             {
@@ -52,9 +60,13 @@
     {
         "name": "One Beyond",
         "from": "2020.07.13",
-        "to": "present",
+        "to": "2023.03.02",
         "location": "Szeged, Hungary",
-        "logo": "/one_beyond_logo.webp",
+        "logo": {
+            "url": "/one_beyond_logo.webp",
+            "width": 60,
+            "height": 40
+        },
         "website": "https://www.one-beyond.com",
         "projects": [
             {
@@ -90,6 +102,30 @@
                     "JavaScript",
                     "TypeScript",
                     "MongoDB"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Lufthansa",
+        "from": "2023.03.02",
+        "to": "present",
+        "location": "Szeged, Hungary",
+        "logo": {
+            "url": "/lufthansa_logo.png",
+            "width": 130,
+            "height": 30
+        },
+        "website": "https://www.lufthansa.com",
+        "projects": [
+            {
+                "description": "Internal pricing software, where managers and analysts, can manage flights prices depending on countless factors, like distance, fuel consumption, flight popularity, airplanes characteristics etc.",
+                "role": "Frontend Developer",
+                "technologies": [
+                    "React",
+                    "Redux",
+                    "JavaScript",
+                    "TypeScript"
                 ]
             }
         ]

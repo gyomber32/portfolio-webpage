@@ -1,65 +1,83 @@
 {
-    "text": "When you have landed on my page, you could see the rotating JavaScript / TypeScript logo. Yes, they are my favorite languages and every framework, library or package which they were built around them. However, I was never afraid to jump into new technologies, especially if they are widely used or brand new and promising.",
+    "text": "When you have landed on my page, you could see the rotating JavaScript / TypeScript logo. Yes, they are my favorite languages and every framework, library or package which they were built around them. However, I was never afraid to jump into new technologies, especially if they are widely used or brand new and promising. Here are some of the technologies I like to use when its up to create a software: ",
     "technologies": [
         {
             "name": "JavaScript",
             "src": "/javascript.svg",
-            "alt": "",
-            "href": ""
+            "alt": "Since its creation in 1995 JavaScript is pretty much everywhere on the web—and. It's the most commonly used programming language for the ten year in a row.",
+            "href": "https://www.javascript.com/"
         },
         {
             "name": "TypeScript",
             "src": "/typescript.svg",
-            "alt": "",
-            "href": ""
+            "alt": "Typescript jumped from the 10th position to the 4th in 2020. In 2022, it remained steady as the 4th most used programming language.",
+            "href": "https://www.typescriptlang.org/"
         },
         {
             "name": "React",
             "src": "/react.svg",
-            "alt": "",
-            "href": ""
+            "alt": "According to Statista, it is the second most popular framework in the world, used by almost 43% of developers who know JavaScript.",
+            "href": "https://reactjs.org/"
         },
         {
             "name": "NextJS",
             "src": "/next.svg",
-            "alt": "",
-            "href": ""
+            "alt": "Next.js is widely used by the biggest and most popular companies all over the world like Netflix, Uber, Starbucks, or Twitch",
+            "href": "https://nextjs.org/"
         },
         {
             "name": "Redux",
             "src": "/redux.svg",
-            "alt": "",
-            "href": ""
+            "alt": "2285 companies reportedly use Redux in their tech stacks, including Instagram, Amazon, Robinhood, Revolut etc.",
+            "href": "https://redux.js.org/"
         },
         {
             "name": "NodeJS",
             "src": "/nodejs.svg",
-            "alt": "",
-            "href": ""
+            "alt": "Node. js was named the most popular web technology according to StackOverflow's 2022 Developer Survey. Node. js is currently in use by well-known companies like Netflix, Uber, PayPal, Twitter, and more. ",
+            "href": "https://nodejs.org/"
         },
         {
             "name": "Express",
             "src": "/express.svg",
-            "alt": "",
-            "href": ""
+            "alt": "Express.js is the most popular backend framework for Node.js, and it is an extensive part of the JavaScript ecosystem.",
+            "href": "https://expressjs.com/"
         },
         {
             "name": "MongoDB",
             "src": "/mongodb.svg",
-            "alt": "",
-            "href": ""
+            "alt": "MongoDB has become quite popular in the last few years with the number of users growing at almost the same rate as PostgreSQL.",
+            "href": "https://www.mongodb.com/"
         },
         {
             "name": "PostgresSQL",
             "src": "/postgresql.svg",
-            "alt": "",
-            "href": ""
+            "alt": "Today, PostgreSQL is one of the most used databases. It is also the most Advanced Open Source Relational Database.",
+            "href": "https://www.postgresql.org/"
         },
         {
             "name": "GraphQL",
             "src": "/graphql.svg",
-            "alt": "",
-            "href": ""
+            "alt": "GraphQL is popular due to its usability and flexibility which outweighs traditional integration points. Studies showed it is primarily used for exposing internal data, although partner and public use cases are not uncommon.",
+            "href": "https://graphql.org/"
+        },
+        {
+            "name": "React Query",
+            "src": "/react_query_logo.svg",
+            "alt": "React Query is a ReactJS preconfigured data management library which gives you power and control over server-side state management, fetching, and caching of data, and error handling in a simple and declarative way without affecting the global state of your application.",
+            "href": "https://react-query-v3.tanstack.com/"
+        },
+        {
+            "name": "Styled Components",
+            "src": "/styled_components_logo.svg",
+            "alt": "They encapsulate CSS down to the component level and allow you to use JavaScript to define reusable styles.",
+            "href": "https://styled-components.com/"
+        },
+        {
+            "name": "React Hook Form",
+            "src": "/react_hook_form_logo.png",
+            "alt": "React Hook Form isolates input components from the others and prevents re-render of the form for a single input. It avoids this unnecessary re-rendering. So it is a great advantage in terms of the performance compared to Formik which updates every change in every input field.",
+            "href": "https://react-hook-form.com/"
         }
     ]
 }

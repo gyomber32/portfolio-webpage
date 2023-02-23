@@ -9,10 +9,10 @@ const SkillsPage = async () => {
     <div>
       <Title className={styles.pop_outin} title="Preferred skills" />
       <div className={styles.container}>
-        <p id="desc" className={styles.description}>
-          {text || ""}
-        </p>
-        <PreferredTechnologies technologies={technologies || []} />
+        <p className={styles.description}>{text || ""}</p>
+        <div className={styles.tech_container}>
+          <PreferredTechnologies technologies={technologies || []} />
+        </div>
       </div>
     </div>
   );

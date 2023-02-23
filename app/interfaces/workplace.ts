@@ -9,7 +9,11 @@ type Workplace = {
     from: string;
     to: string;
     location: string;
-    logo?: string;
+    logo?: {
+        url: string;
+        width: number;
+        height: number;
+    }
     website: string;
     projects: Project[];
 };

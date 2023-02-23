@@ -42,7 +42,14 @@ export const Workplace: FunctionComponent<Props> = ({
           rel="noopener noreferrer"
         >
           <div className={classNames(styles.logo, styles[`logo_${side}`])}>
-            {logo && <Image src={logo} alt="" width={60} height={40} />}
+            {logo && (
+              <Image
+                src={logo.url}
+                alt=""
+                width={logo.width || 60}
+                height={logo.height || 30}
+              />
+            )}
           </div>
           <div>
             <div className={classNames(styles.name, styles[`name_${side}`])}>

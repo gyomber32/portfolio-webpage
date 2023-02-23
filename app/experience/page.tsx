@@ -12,7 +12,7 @@ const ExperiencePage = async () => {
 
   return (
     <div className={styles.container}>
-      <Title className={styles.title} title="Work" />
+      <Title className={styles.title} title="Experience" />
       <div className={styles.work}>
         <Suspense fallback={<div>Loading...</div>}>
           {data.sort(compare).map((workplace, index) => (

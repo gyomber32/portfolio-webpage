@@ -1,23 +1,87 @@
-.tech_container { 
-    .title {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
+.container { 
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
   }
+}
   
-  .technologies {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(50px, auto);
-    column-gap: 20px;
-    row-gap: 20px;
-    justify-items: center;
-  }
+.technologies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-items: center;
+}
   
-  .grid_item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.grid_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+
+  &:nth-child(1) {
+    animation: zoom_in 0.5s linear 0s 1 normal forwards;
   }
+  &:nth-child(2) {
+    animation: zoom_in 0.5s linear 0.5s 1 normal forwards;
+  }
+  &:nth-child(3) {
+    animation: zoom_in 0.5s linear 1s 1 normal forwards;
+  }
+  &:nth-child(4) {
+    animation: zoom_in 0.5s linear 1.5s 1 normal forwards;
+  }
+  &:nth-child(5) {
+    animation: zoom_in 0.5s linear 2s 1 normal forwards;
+  }
+  &:nth-child(6) {
+    animation: zoom_in 0.5s linear 2.5s 1 normal forwards;
+  }
+  &:nth-child(7) {
+    animation: zoom_in 0.5s linear 3s 1 normal forwards;
+  }
+  &:nth-child(8) {
+    animation: zoom_in 0.5s linear 3.5s 1 normal forwards;
+  }
+  &:nth-child(9) {
+    animation: zoom_in 0.5s linear 4s 1 normal forwards;
+  }
+  &:nth-child(10) {
+    animation: zoom_in 0.5s linear 4.5s 1 normal forwards;
+  }
+  &:nth-child(11) {
+    animation: zoom_in 0.5s linear 5s 1 normal forwards;
+  }
+  &:nth-child(12) {
+    animation: zoom_in 0.5s linear 5.5s 1 normal forwards;
+  }
+  &:nth-child(13) {
+    animation: zoom_in 0.5s linear 6s 1 normal forwards;
+  }
+}
+
+@keyframes zoom_in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.image {
+  filter: invert(1)
+}
+
+.link {
+  text-decoration: none;
+  text-align: center;
+}
+
+.name {
+  color: white;
+  text-decoration: none;
+}
