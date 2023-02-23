@@ -68,21 +68,13 @@ const ContactPage = (): ReactElement => {
           <p className={styles.paragraph}>or smiply download my CV.</p>
           <div className={styles.social_media}>
             <div className={styles.grid_item}>
-              <Link
-                className={styles.download}
+              <ContactItem
+                name="Download"
                 href="/CV_Attila_Gyomber.pdf"
+                iconSrc="/pdf_download_logo.svg"
                 target="_blank"
                 rel="noopener noreferrer"
-                download
-              >
-                <Image
-                  src="/pdf_download_logo.svg"
-                  alt=""
-                  width={30}
-                  height={30}
-                ></Image>
-                <p>Download</p>
-              </Link>
+              />
             </div>
           </div>
         </div>

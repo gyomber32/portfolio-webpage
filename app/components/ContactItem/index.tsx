@@ -13,9 +13,9 @@ export const ContactItem: FunctionComponent<ContactItemType> = ({
   rel,
 }) => {
   return (
-    <Link href={href} target={target} rel={rel} className={styles.container}>
+    <Link className={styles.container} href={href} target={target} rel={rel}>
       <Image src={iconSrc} alt={alt || ""} width={50} height={50}></Image>
-      {name || ""}
+      <p className={styles.text}>{name || ""}</p>
     </Link>
   );
 };
