@@ -1,10 +1,9 @@
 import React, { ReactElement } from "react";
 import Image from "next/image";
-import { CustomHead, Title } from "../components";
+import { Title } from "../components";
 import { aboutImages } from "../constants";
 import styles from "./About.module.scss";
 import classNames from "classnames";
-import Head from "next/head";
 
 const AboutPage = (): ReactElement => {
   return (
