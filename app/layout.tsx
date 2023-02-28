@@ -1,4 +1,4 @@
-import { CustomHead, Footer, Header, QuickReach } from "@/app/components";
+import { Footer, Header, QuickReach } from "@/app/components";
 import "./globals.css";
 
 export default function RootLayout({
