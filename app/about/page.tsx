@@ -1,9 +1,10 @@
 import React, { ReactElement } from "react";
 import Image from "next/image";
-import { Title } from "../components";
+import { CustomHead, Title } from "../components";
 import { aboutImages } from "../constants";
 import styles from "./About.module.scss";
 import classNames from "classnames";
+import Head from "next/head";
 
 const AboutPage = (): ReactElement => {
   return (
@@ -35,7 +36,8 @@ const AboutPage = (): ReactElement => {
         <div className={styles.environment}>
           <p className={styles.text}>
             I'm environmentalist... I know you think it is a cliché, today
-            everyone is an environmentalist, but I actually plant trees,
+            everyone is an environmentalist, but I actually selectively collect
+            wate, I plant trees and I'm a regular donor to Greenpeace.
           </p>
           <div className={styles.images}>
             {aboutImages["environment"].map(({ alt, src }, index) => (
