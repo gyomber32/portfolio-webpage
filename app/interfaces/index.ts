@@ -1,4 +1,5 @@
-import { Workplace } from "./workplace"
+import { Workplace } from "./workplace";
+import { AboutImages } from "./about";
 
 type NavItem = {
     title: string,
@@ -21,4 +22,4 @@ type ContactItem = {
     rel?: "noopener noreferrer";
 };
 
-export type { ContactItem, NavItem, Technology, Workplace }
+export type { AboutImages, ContactItem, NavItem, Technology, Workplace }

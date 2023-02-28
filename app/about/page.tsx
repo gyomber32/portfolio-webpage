@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import Image from "next/image";
 import { Title } from "../components";
+import { aboutImages } from "../constants";
 import styles from "./About.module.scss";
 import classNames from "classnames";
 
@@ -16,34 +17,19 @@ const AboutPage = (): ReactElement => {
             which is a big part of my everyday life,
           </p>
           <div className={styles.images}>
-            <Image
-              className={classNames(styles.image, styles.image1)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
-            <Image
-              className={classNames(styles.image, styles.image2)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
-            <Image
-              className={classNames(styles.image, styles.image3)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
-            <Image
-              className={classNames(styles.image, styles.image4)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
+            {aboutImages["coding"].map(({ alt, src }, index) => (
+              <Image
+                key={alt}
+                className={classNames(
+                  styles.image,
+                  styles[`image${index + 1}`]
+                )}
+                alt={alt}
+                src={src}
+                width={300}
+                height={300}
+              />
+            ))}
           </div>
         </div>
         <div className={styles.environment}>
@@ -52,67 +38,37 @@ const AboutPage = (): ReactElement => {
             everyone is an environmentalist, but I actually plant trees,
           </p>
           <div className={styles.images}>
-            <Image
-              className={classNames(styles.image, styles.image1)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
-            <Image
-              className={classNames(styles.image, styles.image2)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
-            <Image
-              className={classNames(styles.image, styles.image3)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
-            <Image
-              className={classNames(styles.image, styles.image4)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
+            {aboutImages["environment"].map(({ alt, src }, index) => (
+              <Image
+                key={alt}
+                className={classNames(
+                  styles.image,
+                  styles[`image${index + 1}`]
+                )}
+                alt={alt}
+                src={src}
+                width={300}
+                height={300}
+              />
+            ))}
           </div>
         </div>
         <div className={styles.woodworking}>
           <p className={styles.text}>I like woodworking,</p>
           <div className={styles.images}>
-            <Image
-              className={classNames(styles.image, styles.image1)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
-            <Image
-              className={classNames(styles.image, styles.image2)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
-            <Image
-              className={classNames(styles.image, styles.image3)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
-            <Image
-              className={classNames(styles.image, styles.image4)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
+            {aboutImages["woodworking"].map(({ alt, src }, index) => (
+              <Image
+                key={alt}
+                className={classNames(
+                  styles.image,
+                  styles[`image${index + 1}`]
+                )}
+                alt={alt}
+                src={src}
+                width={300}
+                height={300}
+              />
+            ))}
           </div>
         </div>
         <div className={styles.reading}>
@@ -120,34 +76,19 @@ const AboutPage = (): ReactElement => {
             and when the sun goes down I like to read before I go to bed.
           </p>
           <div className={styles.images}>
-            <Image
-              className={classNames(styles.image, styles.image1)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
-            <Image
-              className={classNames(styles.image, styles.image2)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
-            <Image
-              className={classNames(styles.image, styles.image3)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
-            <Image
-              className={classNames(styles.image, styles.image4)}
-              alt=""
-              src="/test.jpg"
-              width={300}
-              height={300}
-            />
+            {aboutImages["reading"].map(({ alt, src }, index) => (
+              <Image
+                key={alt}
+                className={classNames(
+                  styles.image,
+                  styles[`image${index + 1}`]
+                )}
+                alt={alt}
+                src={src}
+                width={300}
+                height={300}
+              />
+            ))}
           </div>
         </div>
       </div>
